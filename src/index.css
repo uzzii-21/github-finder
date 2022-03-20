@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  body {
+    @apply bg-primary;
+  }
+  .container {
+    @apply px-6 xl:px-0 max-w-screen-xl mx-auto;
+  }
+}
+
+@tailwind utilities;
