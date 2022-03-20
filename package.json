@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
@@ -22,9 +25,24 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "postcss": "^8.4.12",
     "prettier": "2.6.0",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,md,js,jsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
