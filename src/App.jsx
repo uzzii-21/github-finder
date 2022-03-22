@@ -1,6 +1,4 @@
-import Backdrop from './components/Backdrop/Backdrop';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import { Header, Footer, Backdrop } from './container';
 
 const App = () => (
   <>

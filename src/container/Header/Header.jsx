@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react/cjs/react.development';
-import Search from '../../components/Search/Search';
+import { Search } from '../../components';
 
 const Header = () => {
   const [isTyping, setIsTyping] = useState(false);
