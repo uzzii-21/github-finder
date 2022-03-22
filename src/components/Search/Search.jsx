@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 const Search = ({ isTyping }) => {
   const onFocus = () => isTyping(true);
-  const onBlur = () => isTyping(false);
+  const onBlur = (e) =>
+    e.target.value === '' ? isTyping(false) : isTyping(true);
 
   return (
     <input
