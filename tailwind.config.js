@@ -1,3 +1,5 @@
+const daisyui = require('daisyui');
+
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
@@ -15,5 +17,6 @@ module.exports = {
         poppins: ['Poppins', 'sans-seri']
       }
     }
-  }
+  },
+  plugins: [daisyui]
 };

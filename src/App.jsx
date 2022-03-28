@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Footer, Backdrop } from './container';
+import { Footer, Backdrop } from './components';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
