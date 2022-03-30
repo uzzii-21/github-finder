@@ -1,5 +1,5 @@
 const Backdrop = () => (
-  <div className="h-screen w-screen fixed top-0 left-0 flex items-center justify-center -z-10">
+  <div className="h-screen w-screen fixed top-0 left-0 flex items-center justify-center -z-10 bg-primary">
     <svg
       className="w-80 h-80 opacity-5"
       height="32"

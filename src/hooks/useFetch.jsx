@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const useFetch = (endPoint, keyWord) => {
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -11,7 +13,8 @@ const useFetch = (endPoint, keyWord) => {
     try {
       const response = await fetch(GITHUB_URL + endPoint + keyWord);
       const { items } = await response.json();
-      setData(items);
+      if (items.length) setData(items);
+      else navigate('/notfound');
       setLoading(false);
     } catch (err) {
       setError(err);

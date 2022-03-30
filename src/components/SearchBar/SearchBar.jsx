@@ -12,10 +12,8 @@ const SearchBar = ({ search, setSearch }) => {
         value={search}
         onChange={changeHandler}
         className="w-full text-xl sm:text-2xl outline-none font-roboto text-primary"
-        placeholder="Search"
+        placeholder="username"
         type="text"
-        name=""
-        id=""
       />
     </div>
   );

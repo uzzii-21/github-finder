@@ -4,9 +4,7 @@ const Header = () => (
       GitHub Finder
     </h1>
     <p className="mb-12 mt-4 text-base sm:text-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illo,
-      aliquid quos laudantium sit exercitationem accusantium natus corporis
-      repellat asperiores nulla minus assumenda totam impedit.
+      Find Github profiles by username and see their repositories.
     </p>
   </div>
 );
