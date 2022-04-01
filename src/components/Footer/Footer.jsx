@@ -7,6 +7,7 @@ const Footer = () => (
       <a
         className="mr-3"
         href="https://github.com/uzzii-21"
+        aria-label="github"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -14,6 +15,7 @@ const Footer = () => (
       </a>
       <a
         href="https://www.linkedin.com/in/uzzii21"
+        aria-label="linkedin"
         target="_blank"
         rel="noopener noreferrer"
       >
