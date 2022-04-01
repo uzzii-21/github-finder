@@ -10,6 +10,8 @@ import TwitterIcon from './twitter.svg?component';
 import StarIcon from './star.svg?component';
 import ForkIcon from './fork.svg?component';
 import ExternalLinkIcon from './external-link.svg?component';
+import GithubIcon from './github.svg?component';
+import LinkedInIcon from './linkedin.svg?component';
 
 export {
   ArrowIcon,
@@ -22,5 +24,7 @@ export {
   TwitterIcon,
   StarIcon,
   ForkIcon,
-  ExternalLinkIcon
+  ExternalLinkIcon,
+  GithubIcon,
+  LinkedInIcon
 };
