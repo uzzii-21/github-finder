@@ -9,7 +9,10 @@ const Profile = () => {
   const { userData, repoData, error } = useGithubUserData(params.username);
   return !error ? (
     <>
-      <Link to="/" className="flex justify-start items-center w-full px-4 mb-6">
+      <Link
+        to="/"
+        className="flex justify-start items-center w-full px-4 mb-6 text-white"
+      >
         {' '}
         <ArrowIcon className="rotate-180 w-6 mr-1" /> Go Back
       </Link>
