@@ -6,16 +6,16 @@ const SearchBar = ({ search, setSearch }) => {
     setSearch(event.target.value);
   };
   return (
-    <div className="border-gray-400 border-2 w-full md:w-[80%] lg:w-[50%] flex items-center rounded-2xl bg-white shadow-2xl p-4">
+    <header className="ring-2 ring-secondary w-full md:w-[80%] lg:w-[50%] flex items-center rounded-2xl bg-white shadow-2xl p-4">
       <SearchIcon className="w-8 mr-3 text-primary" />
       <input
         value={search}
         onChange={changeHandler}
-        className="w-full text-xl sm:text-2xl outline-none font-roboto text-primary"
+        className="w-full text-base sm:text-2xl outline-none text-primary"
         placeholder="username"
         type="text"
       />
-    </div>
+    </header>
   );
 };
 

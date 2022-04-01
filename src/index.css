@@ -1,12 +1,32 @@
 .progress::after {
   background: white !important;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 @tailwind base;
+@layer base {
+  html {
+    @apply font-roboto;
+  }
+}
 @tailwind components;
 
 @layer components {
   .container {
     @apply px-6 xl:px-0 max-w-screen-xl mx-auto;
+  }
+  .main-heading {
+    @apply text-5xl sm:text-8xl font-bold;
+  }
+  .paragraph {
+    @apply text-base sm:text-2xl;
   }
 }
 

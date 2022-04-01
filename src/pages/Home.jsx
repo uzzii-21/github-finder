@@ -1,27 +1,27 @@
 import { useState } from 'react';
-import { Header, ProfileList, SearchBar, Loading } from '../components';
-import useFetch from '../hooks/useFetch';
+import { Header, ProfileLists, SearchBar, Loading } from '../components';
+import useGithubSearch from '../hooks/useGithubSearch';
 
 const Home = () => {
   const [search, setSearch] = useState('');
-  const { data, isLoading } = useFetch('search/users?q=', search);
+  const { data, isLoading, error } = useGithubSearch(search);
   return (
     <>
       <SearchBar search={search} setSearch={setSearch} />
-      {!data.length && !isLoading ? <Header /> : null}
-      {data.length ? (
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-3 w-full my-12">
-          {data.map((user) => (
-            <ProfileList
-              key={user.id}
-              imgUrl={user.avatar_url}
-              name={user.login}
-              profileUrl={user.html_url}
-            />
-          ))}
-        </div>
-      ) : null}
-      {isLoading ? <Loading /> : null}
+      {!data.length && !isLoading && !error && (
+        <Header
+          heading="GitHub Finder"
+          description="Find Github profiles by username and see their repositories."
+        />
+      )}
+      {error && !data.length && (
+        <Header
+          heading="Oops!"
+          description="We could not find the user that you are looking for."
+        />
+      )}
+      {data.length ? <ProfileLists users={data} /> : null}
+      {isLoading && <Loading />}
     </>
   );
 };

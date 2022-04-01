@@ -5,16 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#151515',
-        secondary: '#53dd6c',
-        white: '#fefefe',
-        red: '#e71d36',
-        yellow: '#ff9f1c',
-        orange: '#ca3c25'
+        white: '#ffffff',
+        primary: '#1D1D1D',
+        secondary: '#333333',
+        lightGray: '#828282',
+        error: '#EB5757',
+        success: '#27AE60'
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-        poppins: ['Poppins', 'sans-seri']
+        roboto: ['Roboto', 'sans-serif']
       }
     }
   },
