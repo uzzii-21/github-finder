@@ -2,7 +2,9 @@
  
 Find Github profiles by username and see their repositories.
 
-![demo](https://github.com/uzzii-21/github-finder/blob/main/design.png)
+[**Live Demo**](https://github-finder-uzzii-21.vercel.app/) 
+
+![](./design.png)
 
 Built with:
 
