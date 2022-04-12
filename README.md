@@ -1,6 +1,6 @@
 # github-finder
  
-A nicer look at your GitHub Profile! With charts!
+Find Github profiles by username and see their repositories.
 
 ![demo](https://github.com/uzzii-21/github-finder/blob/main/design.png)
 
